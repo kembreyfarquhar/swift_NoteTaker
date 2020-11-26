@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,12 @@
 		0476889C256DDC63005ABF79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476889B256DDC63005ABF79 /* ContentView.swift */; };
 		0476889E256DDC67005ABF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476889D256DDC67005ABF79 /* Assets.xcassets */; };
 		047688A1256DDC67005ABF79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047688A0256DDC67005ABF79 /* Preview Assets.xcassets */; };
+		047688AB256DE296005ABF79 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047688AA256DE296005ABF79 /* Note.swift */; };
+		047688B2256DE7AF005ABF79 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047688B1256DE7AF005ABF79 /* NotesList.swift */; };
+		047688B5256E0022005ABF79 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047688B4256E0022005ABF79 /* EditorView.swift */; };
+		047688B9256E46AB005ABF79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047688B8256E46AB005ABF79 /* GoogleService-Info.plist */; };
+		04768924256F35CD005ABF79 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768923256F35CD005ABF79 /* Styles.swift */; };
+		826620E8B33C1BDD581FC2BB /* Pods_NoteTaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36935D424D57C13FD8617C4 /* Pods_NoteTaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,14 @@
 		0476889D256DDC67005ABF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047688A0256DDC67005ABF79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		047688A2256DDC67005ABF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047688AA256DE296005ABF79 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		047688B1256DE7AF005ABF79 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
+		047688B4256E0022005ABF79 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		047688B8256E46AB005ABF79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04768923256F35CD005ABF79 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		AD215ED13AA6439090B825FD /* Pods-NoteTaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.release.xcconfig"; path = "Target Support Files/Pods-NoteTaker/Pods-NoteTaker.release.xcconfig"; sourceTree = "<group>"; };
+		C78A295FA52120D387F53EDF /* Pods-NoteTaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.debug.xcconfig"; path = "Target Support Files/Pods-NoteTaker/Pods-NoteTaker.debug.xcconfig"; sourceTree = "<group>"; };
+		D36935D424D57C13FD8617C4 /* Pods_NoteTaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteTaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826620E8B33C1BDD581FC2BB /* Pods_NoteTaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +53,8 @@
 			children = (
 				04768898256DDC63005ABF79 /* NoteTaker */,
 				04768897256DDC63005ABF79 /* Products */,
+				96E29C63A7B066EC0A06A8D1 /* Pods */,
+				7889924CB0884107F0CCDE68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +69,14 @@
 		04768898256DDC63005ABF79 /* NoteTaker */ = {
 			isa = PBXGroup;
 			children = (
+				04768922256F35B5005ABF79 /* Helpers */,
+				047688A9256DE273005ABF79 /* Models */,
 				04768899256DDC63005ABF79 /* NoteTakerApp.swift */,
 				0476889B256DDC63005ABF79 /* ContentView.swift */,
+				047688B4256E0022005ABF79 /* EditorView.swift */,
 				0476889D256DDC67005ABF79 /* Assets.xcassets */,
 				047688A2256DDC67005ABF79 /* Info.plist */,
+				047688B8256E46AB005ABF79 /* GoogleService-Info.plist */,
 				0476889F256DDC67005ABF79 /* Preview Content */,
 			);
 			path = NoteTaker;
@@ -69,6 +90,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		047688A9256DE273005ABF79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				047688AA256DE296005ABF79 /* Note.swift */,
+				047688B1256DE7AF005ABF79 /* NotesList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04768922256F35B5005ABF79 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04768923256F35CD005ABF79 /* Styles.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7889924CB0884107F0CCDE68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D36935D424D57C13FD8617C4 /* Pods_NoteTaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E29C63A7B066EC0A06A8D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C78A295FA52120D387F53EDF /* Pods-NoteTaker.debug.xcconfig */,
+				AD215ED13AA6439090B825FD /* Pods-NoteTaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047688A5256DDC67005ABF79 /* Build configuration list for PBXNativeTarget "NoteTaker" */;
 			buildPhases = (
+				EA4B275702080B7DD34016C4 /* [CP] Check Pods Manifest.lock */,
 				04768892256DDC63005ABF79 /* Sources */,
 				04768893256DDC63005ABF79 /* Frameworks */,
 				04768894256DDC63005ABF79 /* Resources */,
+				8D5FBFDDB6762B0669E4E923 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +185,53 @@
 			files = (
 				047688A1256DDC67005ABF79 /* Preview Assets.xcassets in Resources */,
 				0476889E256DDC67005ABF79 /* Assets.xcassets in Resources */,
+				047688B9256E46AB005ABF79 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D5FBFDDB6762B0669E4E923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteTaker/Pods-NoteTaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteTaker/Pods-NoteTaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoteTaker/Pods-NoteTaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4B275702080B7DD34016C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteTaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04768892256DDC63005ABF79 /* Sources */ = {
@@ -140,6 +240,10 @@
 			files = (
 				0476889C256DDC63005ABF79 /* ContentView.swift in Sources */,
 				0476889A256DDC63005ABF79 /* NoteTakerApp.swift in Sources */,
+				047688AB256DE296005ABF79 /* Note.swift in Sources */,
+				04768924256F35CD005ABF79 /* Styles.swift in Sources */,
+				047688B2256DE7AF005ABF79 /* NotesList.swift in Sources */,
+				047688B5256E0022005ABF79 /* EditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +368,7 @@
 		};
 		047688A6256DDC67005ABF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78A295FA52120D387F53EDF /* Pods-NoteTaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +390,7 @@
 		};
 		047688A7256DDC67005ABF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD215ED13AA6439090B825FD /* Pods-NoteTaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
