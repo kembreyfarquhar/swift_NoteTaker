@@ -37,21 +37,24 @@ class NotesList: ObservableObject {
                 let id = i.document.documentID
                 
                 if i.type == .added{
+                    let title = i.document.data()["title"] as! String
                     let content = i.document.data()["content"] as! String
                     let color = i.document.data()["color"] as! String
                     let font = i.document.data()["font"] as! String
                     DispatchQueue.main.async {
-                        self.notes.append(Note(id: id, content: content, color: color, font: font))
+                        self.notes.append(Note(id: id, title: title, content: content, color: color, font: font))
                     }
                     self.noData = false
                 }
                 
                 if i.type == .modified{
+                    let title = i.document.data()["title"] as! String
                     let content = i.document.data()["content"] as! String
                     let color = i.document.data()["color"] as! String
                     let font = i.document.data()["font"] as! String
                     for j in 0..<self.notes.count{
                         if self.notes[j].id == id {
+                            self.notes[j].title = title
                             self.notes[j].content = content
                             self.notes[j].color = color
                             self.notes[j].font = font
@@ -63,10 +66,6 @@ class NotesList: ObservableObject {
                     print(self.notes.count)
                     for j in 0..<self.notes.count{
                         if self.notes[j].id == id {
-                            print("J: \(j)")
-                            print("FB ID: \(id)")
-                            print("NOTE ID: \(self.notes[j].id)")
-                            print(self.notes[j].content)
                             self.notes.remove(at: j)
                             if self.notes.isEmpty {
                                 self.noData = true

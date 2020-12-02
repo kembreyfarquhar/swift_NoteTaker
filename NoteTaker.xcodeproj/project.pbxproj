@@ -16,6 +16,8 @@
 		047688B5256E0022005ABF79 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047688B4256E0022005ABF79 /* EditorView.swift */; };
 		047688B9256E46AB005ABF79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047688B8256E46AB005ABF79 /* GoogleService-Info.plist */; };
 		04768924256F35CD005ABF79 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768923256F35CD005ABF79 /* Styles.swift */; };
+		04768943256FC481005ABF79 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768942256FC481005ABF79 /* Widgets.swift */; };
+		0476894625702240005ABF79 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476894525702240005ABF79 /* Modal.swift */; };
 		826620E8B33C1BDD581FC2BB /* Pods_NoteTaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36935D424D57C13FD8617C4 /* Pods_NoteTaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		047688B4256E0022005ABF79 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		047688B8256E46AB005ABF79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04768923256F35CD005ABF79 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		04768942256FC481005ABF79 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		0476894525702240005ABF79 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		AD215ED13AA6439090B825FD /* Pods-NoteTaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.release.xcconfig"; path = "Target Support Files/Pods-NoteTaker/Pods-NoteTaker.release.xcconfig"; sourceTree = "<group>"; };
 		C78A295FA52120D387F53EDF /* Pods-NoteTaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.debug.xcconfig"; path = "Target Support Files/Pods-NoteTaker/Pods-NoteTaker.debug.xcconfig"; sourceTree = "<group>"; };
 		D36935D424D57C13FD8617C4 /* Pods_NoteTaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteTaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,7 @@
 			children = (
 				047688AA256DE296005ABF79 /* Note.swift */,
 				047688B1256DE7AF005ABF79 /* NotesList.swift */,
+				0476894525702240005ABF79 /* Modal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				04768923256F35CD005ABF79 /* Styles.swift */,
+				04768942256FC481005ABF79 /* Widgets.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 				0476889C256DDC63005ABF79 /* ContentView.swift in Sources */,
 				0476889A256DDC63005ABF79 /* NoteTakerApp.swift in Sources */,
 				047688AB256DE296005ABF79 /* Note.swift in Sources */,
+				0476894625702240005ABF79 /* Modal.swift in Sources */,
 				04768924256F35CD005ABF79 /* Styles.swift in Sources */,
 				047688B2256DE7AF005ABF79 /* NotesList.swift in Sources */,
+				04768943256FC481005ABF79 /* Widgets.swift in Sources */,
 				047688B5256E0022005ABF79 /* EditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
